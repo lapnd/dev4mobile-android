@@ -2,19 +2,23 @@ package cn.dev4mob.app.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import cn.dev4mob.app.R;
+import cn.dev4mob.app.ui.base.activity.AwesomeActivity;
+import cn.dev4mob.app.ui.base.fragment.AwesomeFragment;
 import cn.dev4mob.app.ui.base.fragment.ItemFragment;
 
-public class HomeActivity extends Activity implements ItemFragment.OnFragmentInteractionListener {
+public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFragmentInteractionListener {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
     getFragmentManager().beginTransaction()
-        .replace(R.id.content, ItemFragment.newInstance("hello", "world")).commitAllowingStateLoss();
+        .replace(R.id.content, new AwesomeFragment())
+        .commitAllowingStateLoss();
   }
 
   @Override
@@ -37,6 +41,5 @@ public class HomeActivity extends Activity implements ItemFragment.OnFragmentInt
   }
 
   @Override public void onFragmentInteraction(String id) {
-
   }
 }

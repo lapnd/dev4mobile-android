@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/classes-e44ef074c0016665fe3bd2b5b34f5215b910c0e6.jar"
+        jar="/Users/dev4mobile/dev/dev4mobile-android/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/timber-2.3.0-092d87b61b780b2cd6d3d237ad0440c8e7d79f9a.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.3.0/4e38495c66de7490fb8b95745ae7458ab6eb2664/timber-2.3.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4e38495c66de7490fb8b95745ae7458ab6eb2664"/>
+
+</pre-dex-items>

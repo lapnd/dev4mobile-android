@@ -25,7 +25,7 @@ import cn.dev4mob.app.ui.base.fragment.dummy.DummyContent;
  * Activities containing this fragment MUST implement the {@link Callbacks}
  * interface.
  */
-public class ItemFragment extends Fragment implements AbsListView.OnItemClickListener {
+public class ItemFragment extends AwesomeFragment implements AbsListView.OnItemClickListener {
 
   // TODO: Rename parameter arguments, choose names that match
   // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -65,7 +65,7 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
    * fragment (e.g. upon screen orientation changes).
    */
   public ItemFragment() {
-    FragmentManager.enableDebugLogging(true);
+    //FragmentManager.enableDebugLogging(true);
   }
 
   @Override
