@@ -1,6 +1,7 @@
 package cn.dev4mob.app.ui.base.fragment;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -64,6 +65,7 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
    * fragment (e.g. upon screen orientation changes).
    */
   public ItemFragment() {
+    FragmentManager.enableDebugLogging(true);
   }
 
   @Override
@@ -89,18 +91,30 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
     mListView = (AbsListView) view.findViewById(android.R.id.list);
     mEmptyView = (TextView) view.findViewById(android.R.id.empty);
     ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
-
     // Set OnItemClickListener so we can be notified on item clicks
     mListView.setOnItemClickListener(this);
     mListView.setEmptyView(mEmptyView);
+    mListView.setOnScrollListener(new AbsListView.OnScrollListener() {
+      @Override public void onScrollStateChanged(AbsListView view, int scrollState) {
 
+      }
+
+      @Override public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
+          int totalItemCount) {
+
+      }
+    });
     return view;
   }
 
   @Override public void onViewCreated(View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
+
+  }
+
+  @Override public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
     setEmptyText("列表为空!");
-    ((ArrayAdapter)mListView.getAdapter()).notifyDataSetChanged();
   }
 
   @Override
@@ -137,7 +151,7 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
   public void setEmptyText(CharSequence emptyText) {
     View emptyView = mListView.getEmptyView();
 
-    if (emptyText instanceof TextView) {
+    if (emptyView instanceof TextView) {
       ((TextView) emptyView).setText(emptyText);
     }
   }
