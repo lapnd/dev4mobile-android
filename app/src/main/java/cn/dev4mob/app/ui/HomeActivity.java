@@ -14,7 +14,7 @@ public class HomeActivity extends Activity implements ItemFragment.OnFragmentInt
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
     getFragmentManager().beginTransaction()
-        .replace(R.id.content, ItemFragment.newInstance("hello", "world"));
+        .replace(R.id.content, ItemFragment.newInstance("hello", "world")).commitAllowingStateLoss();
   }
 
   @Override
