@@ -13,7 +13,7 @@ import timber.log.Timber;
  */
 public class AwesomeFragment extends Fragment {
 
-  public static final boolean debug = true;
+  private static final boolean debug = true;
 
   @Override public void onAttach(Activity activity) {
     super.onAttach(activity);

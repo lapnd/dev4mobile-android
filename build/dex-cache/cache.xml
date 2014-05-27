@@ -2,11 +2,23 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/classes-e44ef074c0016665fe3bd2b5b34f5215b910c0e6.jar"
-        jar="/Users/dev4mobile/dev/dev4mobile-android/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/retrofit-1.5.1-0784bfc0d7fdbf5d9352fc811456f672363aa2f6.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.5.1/266695d62b6df0e1176af2be3634bcd0837d4fbd/retrofit-1.5.1.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+        sha1="266695d62b6df0e1176af2be3634bcd0837d4fbd"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/okhttp-1.5.3-8af9a617fc14386cb559ba40157f4b983e3ebf5d.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/1.5.3/1c686b1e55ef22c795c7ec2e61c72cedb63123a5/okhttp-1.5.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1c686b1e55ef22c795c7ec2e61c72cedb63123a5"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/picasso-2.2.0-280407cf31fd60e9e667f879941c7f56aa3fb441.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.2.0/74137f8d9aac26dd9463efe32271f2be8d41cda9/picasso-2.2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="74137f8d9aac26dd9463efe32271f2be8d41cda9"/>
     <item
         dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
         jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
@@ -14,10 +26,28 @@
         revision="19.1.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
     <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/butterknife-5.0.1-5baf387210b787181acb7d3ebc38ba5a58502c19.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/5.0.1/8b8b5dbb7246b579377790535b8063cdc324d341/butterknife-5.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8b8b5dbb7246b579377790535b8063cdc324d341"/>
+    <item
         dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/timber-2.3.0-092d87b61b780b2cd6d3d237ad0440c8e7d79f9a.jar"
         jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.3.0/4e38495c66de7490fb8b95745ae7458ab6eb2664/timber-2.3.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="4e38495c66de7490fb8b95745ae7458ab6eb2664"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/classes-e44ef074c0016665fe3bd2b5b34f5215b910c0e6.jar"
+        jar="/Users/dev4mobile/dev/dev4mobile-android/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/gson-2.2.4-9833afa9ff3641baba6d2a18b85c287cd9cfb378.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
 
 </pre-dex-items>
