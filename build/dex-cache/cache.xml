@@ -14,6 +14,12 @@
         revision="19.1.0"
         sha1="8b8b5dbb7246b579377790535b8063cdc324d341"/>
     <item
+        dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/android-agent-3.378.0-dfa7204fd4589bff0b75a756c18818efeafe9336.jar"
+        jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.android/android-agent/3.378.0/1ebf0e20081a7f1b9a5c31bfc4e7dba776e0c171/android-agent-3.378.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1ebf0e20081a7f1b9a5c31bfc4e7dba776e0c171"/>
+    <item
         dex="/Users/dev4mobile/dev/dev4mobile-android/app/build/pre-dexed/debug/timber-2.3.0-092d87b61b780b2cd6d3d237ad0440c8e7d79f9a.jar"
         jar="/Users/dev4mobile/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.3.0/4e38495c66de7490fb8b95745ae7458ab6eb2664/timber-2.3.0.jar"
         jumboMode="false"
