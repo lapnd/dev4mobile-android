@@ -12,5 +12,6 @@
     <string name="action_example">Example action</string>
     <string name="title_activity_picasso">PicassoActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_mock_activity_state">MockActivityState</string>
 
 </resources>

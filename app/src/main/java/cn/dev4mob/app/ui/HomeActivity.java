@@ -1,29 +1,38 @@
 package cn.dev4mob.app.ui;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
+import android.app.Fragment;
+import android.os.Bundle; import android.view.Menu;
 import android.view.MenuItem;
 import cn.dev4mob.app.R;
-import cn.dev4mob.app.ui.activity.PicassoActivity;
 import cn.dev4mob.app.ui.base.activity.AwesomeActivity;
 import cn.dev4mob.app.ui.base.fragment.AwesomeFragment;
 import cn.dev4mob.app.ui.base.fragment.ItemFragment;
+import cn.dev4mob.app.utils.FlurryUtils;
+import timber.log.Timber;
 
-public class HomeActivity extends AwesomeActivity
-    implements ItemFragment.OnFragmentInteractionListener {
+public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFragmentInteractionListener {
+
+  Fragment fragment;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
-    getFragmentManager().beginTransaction()
-        .replace(R.id.content, new AwesomeFragment())
-        .commitAllowingStateLoss();
+    Timber.d("fragment=%d", fragment == null ? 0 : 1);
+    if (savedInstanceState == null) {
+      Timber.d("savedInstanceState %s", "savedInstanceStatie");
+      getFragmentManager().beginTransaction() .replace(R.id.content, new AwesomeFragment(), "awesomefragment").commit();
+    }else {
+      Timber.d("savedInstanceState %s", savedInstanceState.toString());
+      fragment = getFragmentManager().findFragmentByTag("awesomefragment");
+      Timber.d("fragment=%d", fragment == null ? 0 : 1);
+    }
+
     //get("https://raw.github.com/square/okhttp/master/README.md");
     //post();
     //startActivity(new Intent(this, DrawerActivity.class));
-    startActivity(new Intent(this, PicassoActivity.class));
+    //startActivity(new Intent(this, PicassoActivity.class));
+    FlurryUtils.statistics("onCrate","username", "awesome");
   }
 
   //private void get(final String url) {
@@ -61,7 +70,6 @@ public class HomeActivity extends AwesomeActivity
   //  }).start();
   //}
 
-
   String bowlingJson(String player1, String player2) {
     return "{'winCondition':'HIGH_SCORE',"
         + "'name':'Bowling',"
@@ -69,15 +77,19 @@ public class HomeActivity extends AwesomeActivity
         + "'lastSaved':1367702411696,"
         + "'dateStarted':1367702378785,"
         + "'players':["
-        + "{'name':'" + player1 + "','history':[10,8,6,7,8],'color':-13388315,'total':39},"
-        + "{'name':'" + player2 + "','history':[6,10,5,10,10],'color':-48060,'total':41}"
+        + "{'name':'"
+        + player1
+        + "','history':[10,8,6,7,8],'color':-13388315,'total':39},"
+        + "{'name':'"
+        + player2
+        + "','history':[6,10,5,10,10],'color':-48060,'total':41}"
         + "]}";
   }
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.home, menu);
+    //getMenuInflater().inflate(R.menu.home, menu);
     return true;
   }
 

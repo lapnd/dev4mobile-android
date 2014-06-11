@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <declare-styleable name="SmoothProgressBar">
+    <attr name="spbStyle" format="reference"/>
+    <attr name="spb_color" format="color"/>
+    <attr name="spb_stroke_width" format="dimension"/>
+    <attr name="spb_stroke_separator_length" format="dimension"/>
+    <attr name="spb_sections_count" format="integer"/>
+    <attr name="spb_speed" format="float"/>
+    <attr name="spb_interpolator" format="enum">
+      <enum name="spb_interpolator_accelerate" value="0"/>
+      <enum name="spb_interpolator_linear" value="1"/>
+      <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
+      <enum name="spb_interpolator_decelerate" value="3"/>
+    </attr>
+    <attr name="spb_reversed" format="boolean"/>
+    <attr name="spb_mirror_mode" format="boolean"/>
+    <attr name="spb_colors" format="reference"/>
+  </declare-styleable>
+  <declare-styleable name="AppTheme">
+    <attr name="actionbarCompatTitleStyle" format="reference"/>
+    <attr name="actionbarCompatItemStyle" format="reference"/>
+    <attr name="actionbarCompatItemHomeStyle" format="reference"/>
+    <attr name="actionbarCompatProgressIndicatorStyle" format="reference"/>
+  </declare-styleable>
+  <declare-styleable name="BezelImageView">
+    <attr name="maskDrawable" format="reference"/>
+    <attr name="borderDrawable" format="reference"/>
+  </declare-styleable>
+  <declare-styleable name="TextViewPlus">
+    <attr name="customFont" format="string"/>
+  </declare-styleable>
+  <declare-styleable name="ReverseProgressBar">
+    <attr name="isReverse" format="boolean"/>
+  </declare-styleable>
+  <declare-styleable name="ExpandablePanel">
+    <attr name="handle" format="reference"/>
+    <attr name="content" format="reference"/>
+    <attr name="collapsedHeight" format="dimension"/>
+    <attr name="animationDuration" format="integer"/>
+  </declare-styleable>
+</resources>

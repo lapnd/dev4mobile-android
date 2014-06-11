@@ -20,6 +20,7 @@ public class AwesomeApp extends Application {
     // start Fragment logging
     //FragmentManager.enableDebugLogging(true);
 
+    //NewRelic.withApplicationToken("AAa52803e06a8d68f2a294649452d184f28e91d702").start(this.getApplication());
   }
 
   /** A tree which logs important information for crash reporting. */
