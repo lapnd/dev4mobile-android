@@ -13,5 +13,7 @@
     <string name="title_activity_picasso">PicassoActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_mock_activity_state">MockActivityState</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
 
 </resources>

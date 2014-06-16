@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.navigation.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.HomeActivity">
+        <location        
+          id = "point0"        
+          x = "0"        
+          y = "0"/>
+      </key>
+      <value      
+        x = "1920"      
+        y = "320"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.ui.HomeActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1600"      
+        y = "640"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.ui.activity.DrawerActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "3200"      
+        y = "640"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.activity.DrawerActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "2720"      
+        y = "800"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "4480"      
+        y = "320"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = ".LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "4140"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "main_activity2">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1920"      
+        y = "7680"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.activity.PicassoActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "640"      
+        y = "480"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.ui.activity.LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "3200"      
+        y = "640"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.MainActivity2">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "3040"      
+        y = "5920"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "main">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "2080"      
+        y = "6240"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.MainActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "640"      
+        y = "-160"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+  </locations>
+</navigationModel>

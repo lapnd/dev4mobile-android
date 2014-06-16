@@ -1,13 +1,14 @@
 package cn.dev4mob.app.ui;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle; import android.view.Menu;
 import android.view.MenuItem;
 import cn.dev4mob.app.R;
+import cn.dev4mob.app.ui.activity.DrawerActivity;
 import cn.dev4mob.app.ui.base.activity.AwesomeActivity;
 import cn.dev4mob.app.ui.base.fragment.AwesomeFragment;
 import cn.dev4mob.app.ui.base.fragment.ItemFragment;
-import cn.dev4mob.app.utils.FlurryUtils;
 import timber.log.Timber;
 
 public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFragmentInteractionListener {
@@ -18,7 +19,7 @@ public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFrag
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
-    Timber.d("fragment=%d", fragment == null ? 0 : 1);
+    //Timber.d("fragment=%d", fragment == null ? 0 : 1);
     if (savedInstanceState == null) {
       Timber.d("savedInstanceState %s", "savedInstanceStatie");
       getFragmentManager().beginTransaction() .replace(R.id.content, new AwesomeFragment(), "awesomefragment").commit();
@@ -30,9 +31,10 @@ public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFrag
 
     //get("https://raw.github.com/square/okhttp/master/README.md");
     //post();
-    //startActivity(new Intent(this, DrawerActivity.class));
+    startActivity(new Intent(this, DrawerActivity.class));
     //startActivity(new Intent(this, PicassoActivity.class));
-    FlurryUtils.statistics("onCrate","username", "awesome");
+    //FlurryUtils.statistics("onCrate","username", "awesome");
+    //setContentView(R.layout.sample_my_view);
   }
 
   //private void get(final String url) {
