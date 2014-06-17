@@ -135,7 +135,7 @@ public class SpotlightView extends View {
 	}
 
 	private static Shader createShader(Bitmap b) {
-		return new BitmapShader(b, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+		return new BitmapShader(b, Shader.TileMode.MIRROR, Shader.TileMode.MIRROR);
 	}
 
 	private static Bitmap createBitmap(View target) {

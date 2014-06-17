@@ -18,23 +18,24 @@ public class HomeActivity extends AwesomeActivity implements ItemFragment.OnFrag
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_home);
-    //Timber.d("fragment=%d", fragment == null ? 0 : 1);
-    if (savedInstanceState == null) {
-      Timber.d("savedInstanceState %s", "savedInstanceStatie");
-      getFragmentManager().beginTransaction() .replace(R.id.content, new AwesomeFragment(), "awesomefragment").commit();
-    }else {
-      Timber.d("savedInstanceState %s", savedInstanceState.toString());
-      fragment = getFragmentManager().findFragmentByTag("awesomefragment");
-      Timber.d("fragment=%d", fragment == null ? 0 : 1);
-    }
+    //setContentView(R.layout.activity_home);
+    ////Timber.d("fragment=%d", fragment == null ? 0 : 1);
+    //if (savedInstanceState == null) {
+    //  Timber.d("savedInstanceState %s", "savedInstanceStatie");
+    //  getFragmentManager().beginTransaction() .replace(R.id.content, new AwesomeFragment(), "awesomefragment").commit();
+    //}else {
+    //  Timber.d("savedInstanceState %s", savedInstanceState.toString());
+    //  fragment = getFragmentManager().findFragmentByTag("awesomefragment");
+    //  Timber.d("fragment=%d", fragment == null ? 0 : 1);
+    //}
 
     //get("https://raw.github.com/square/okhttp/master/README.md");
     //post();
-    startActivity(new Intent(this, DrawerActivity.class));
+    //startActivity(new Intent(this, DrawerActivity.class));
     //startActivity(new Intent(this, PicassoActivity.class));
     //FlurryUtils.statistics("onCrate","username", "awesome");
     //setContentView(R.layout.sample_my_view);
+    setContentView(R.layout.main);
   }
 
   //private void get(final String url) {

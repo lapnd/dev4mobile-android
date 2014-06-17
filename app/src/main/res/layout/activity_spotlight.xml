@@ -49,7 +49,7 @@
       android:id="@+id/spotlight"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:alpha="1.0"
+      android:alpha="0.0"
       s:target="@id/content"
       s:mask="@drawable/spot_mask"/>
 

@@ -67,6 +67,7 @@
     <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="FlurryAnalytics-4.0.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="rebound-0.3.3" level="project" />
     <orderEntry type="library" exported="" name="android-agent-3.378.0" level="project" />
     <orderEntry type="library" exported="" name="timber-2.3.0" level="project" />
     <orderEntry type="library" exported="" name="butterknife-5.0.1" level="project" />

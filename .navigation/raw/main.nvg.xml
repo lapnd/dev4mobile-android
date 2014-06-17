@@ -44,13 +44,25 @@
     <entry>
       <key      
         class = "com.android.navigation.ActivityState"      
-        className = "ui.activity.DrawerActivity">
+        className = "ui.animationsdemo.CardFlipActivity">
         <location        
           idref = "point0"/>
       </key>
       <value      
-        x = "2720"      
-        y = "800"      
+        x = "500"      
+        y = "4140"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.animationsdemo.MainActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "2120"      
         class = "com.android.navigation.Point"/>
     </entry>
     <entry>
@@ -68,49 +80,13 @@
     <entry>
       <key      
         class = "com.android.navigation.ActivityState"      
-        className = ".LoginActivity">
+        className = "ui.animationsdemo.ZoomActivity">
         <location        
           idref = "point0"/>
       </key>
       <value      
         x = "500"      
-        y = "4140"      
-        class = "com.android.navigation.Point"/>
-    </entry>
-    <entry>
-      <key      
-        class = "com.android.navigation.MenuState"      
-        xmlResourceName = "main_activity2">
-        <location        
-          idref = "point0"/>
-      </key>
-      <value      
-        x = "1920"      
-        y = "7680"      
-        class = "com.android.navigation.Point"/>
-    </entry>
-    <entry>
-      <key      
-        class = "com.android.navigation.ActivityState"      
-        className = "ui.activity.PicassoActivity">
-        <location        
-          idref = "point0"/>
-      </key>
-      <value      
-        x = "640"      
-        y = "480"      
-        class = "com.android.navigation.Point"/>
-    </entry>
-    <entry>
-      <key      
-        class = "com.android.navigation.ActivityState"      
-        className = "cn.dev4mob.app.ui.activity.LoginActivity">
-        <location        
-          idref = "point0"/>
-      </key>
-      <value      
-        x = "3200"      
-        y = "640"      
+        y = "8180"      
         class = "com.android.navigation.Point"/>
     </entry>
     <entry>
@@ -147,6 +123,102 @@
       <value      
         x = "640"      
         y = "-160"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.animationsdemo.ScreenSlideActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "480"      
+        y = "160"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.activity.DrawerActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "2720"      
+        y = "800"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = ".LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "4140"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "main_activity2">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1920"      
+        y = "7680"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.activity.PicassoActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "480"      
+        y = "160"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.ui.activity.LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "3200"      
+        y = "640"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.animationsdemo.LayoutChangesActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "14240"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "ui.animationsdemo.CrossfadeActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "12220"      
         class = "com.android.navigation.Point"/>
     </entry>
   </locations>

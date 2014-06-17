@@ -6,7 +6,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
+import android.view.animation.CycleInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import cn.dev4mob.app.R;
@@ -45,11 +48,13 @@ public class OtherSpotlightActivity extends Activity {
             "scaleY", scale);
         ObjectAnimator anim2 = ObjectAnimator.ofFloat(container,
             "scaleX", scale);
+        ObjectAnimator anim3 = ObjectAnimator.ofFloat(container, "alpha", 1.0f, 0.25f, 0.75f, 0.15f, 0.5f, 0.0f);
         AnimatorSet animSet = new AnimatorSet();
-        animSet.play(anim1).with(anim2);
-        anim1.setDuration(1500);
-        anim2.setDuration(1500);
-        anim1.setInterpolator(new AccelerateInterpolator());
+        //animSet.play(anim1).with(anim2).with(anim3);
+        animSet.playTogether(anim1, anim2, anim3);
+        animSet.setDuration(2500);
+        //anim1.setInterpolator(new CycleInterpolator(1.0f));
+        animSet.setInterpolator(new LinearInterpolator());
         animSet.start();
       }
     });
