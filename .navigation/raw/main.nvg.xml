@@ -25,7 +25,7 @@
           idref = "point0"/>
       </key>
       <value      
-        x = "1600"      
+        x = "640"      
         y = "640"      
         class = "com.android.navigation.Point"/>
     </entry>
@@ -134,7 +134,31 @@
       </key>
       <value      
         x = "480"      
-        y = "160"      
+        y = "480"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "cn.dev4mob.app.Main2Activity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "4140"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "main2">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "2080"      
+        y = "4140"      
         class = "com.android.navigation.Point"/>
     </entry>
     <entry>
@@ -145,8 +169,8 @@
           idref = "point0"/>
       </key>
       <value      
-        x = "2720"      
-        y = "800"      
+        x = "1920"      
+        y = "160"      
         class = "com.android.navigation.Point"/>
     </entry>
     <entry>
@@ -181,8 +205,8 @@
           idref = "point0"/>
       </key>
       <value      
-        x = "480"      
-        y = "160"      
+        x = "320"      
+        y = "320"      
         class = "com.android.navigation.Point"/>
     </entry>
     <entry>

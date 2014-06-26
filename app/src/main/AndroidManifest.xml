@@ -13,20 +13,18 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="cn.dev4mob.app.ui.multilistview.MainActivity"
-            android:label="@string/app_name" >
+        <activity android:name="cn.dev4mob.app.ui.activity.SpotlightActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-      <activity android:name=".ui.animationsdemo.CardFlipActivity"/>
-      <activity android:name=".ui.animationsdemo.CrossfadeActivity"/>
-      <activity android:name=".ui.animationsdemo.LayoutChangesActivity"/>
-      <activity android:name=".ui.animationsdemo.ScreenSlideActivity"/>
-      <activity android:name=".ui.animationsdemo.ZoomActivity"/>
+        <activity android:name=".ui.animationsdemo.CardFlipActivity" />
+        <activity android:name=".ui.animationsdemo.CrossfadeActivity" />
+        <activity android:name=".ui.animationsdemo.LayoutChangesActivity" />
+        <activity android:name=".ui.animationsdemo.ScreenSlideActivity" />
+        <activity android:name=".ui.animationsdemo.ZoomActivity" />
         <activity
             android:name=".ui.activity.DrawerActivity"
             android:label="@string/title_activity_drawer" />
@@ -34,7 +32,7 @@
             android:name=".ui.activity.PicassoActivity"
             android:label="@string/title_activity_picasso" />
 
-      <meta-data
+        <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 

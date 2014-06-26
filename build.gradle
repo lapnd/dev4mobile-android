@@ -9,7 +9,8 @@ buildscript {
   dependencies {
     classpath 'com.android.tools.build:gradle:0.11.+'
     classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
-    classpath 'com.newrelic.agent.android:agent-gradle-plugin:3.378.0'
+    classpath 'com.uphyca.gradle:gradle-android-apt-plugin:0.9.4'
+
   }
 }
 

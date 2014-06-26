@@ -13,7 +13,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import cn.dev4mob.app.R;
-import timber.log.Timber;
 
 public class SpotlightView extends View {
 	private int mTargetId;
@@ -84,13 +83,9 @@ public class SpotlightView extends View {
 
 		float maskW = mMask.getWidth() / 2.0f;
 		float maskH = mMask.getHeight() / 2.0f;
-    Timber.d("maskW = %f, maskH= %f", maskW, maskH);
 
 		float x = mMaskX - maskW * mMaskScale;
 		float y = mMaskY - maskH * mMaskScale;
-    Timber.d("MaskScale = %f", mMaskScale);
-
-    Timber.d("x = %f, y = %f", x, y);
 
 		mShaderMatrix.setScale(1.0f / mMaskScale, 1.0f / mMaskScale);
 		mShaderMatrix.preTranslate(-x, -y);
@@ -109,12 +104,11 @@ public class SpotlightView extends View {
 	@Override
 	protected void onAttachedToWindow() {
 		super.onAttachedToWindow();
-    Timber.d("###################onAttachedToWindow###################");
+
 		getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
 			@SuppressWarnings("deprecation")
 			@Override
 			public void onGlobalLayout() {
-        Timber.d("###################onGlobalLayout###################");
 				createShader();
 				setMaskScale(1.0f);
 
@@ -135,7 +129,7 @@ public class SpotlightView extends View {
 	}
 
 	private static Shader createShader(Bitmap b) {
-		return new BitmapShader(b, Shader.TileMode.MIRROR, Shader.TileMode.MIRROR);
+		return new BitmapShader(b, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 	}
 
 	private static Bitmap createBitmap(View target) {

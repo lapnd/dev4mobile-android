@@ -1,6 +1,12 @@
 package cn.dev4mob.app;
 
 import android.app.Application;
+import cn.dev4mob.app.ui.dagger.AnalyticsManager;
+import cn.dev4mob.app.ui.dagger.AppModule;
+import dagger.ObjectGraph;
+import java.util.Arrays;
+import java.util.List;
+import javax.inject.Inject;
 import timber.log.Timber;
 
 import static timber.log.Timber.DebugTree;
@@ -9,6 +15,9 @@ import static timber.log.Timber.DebugTree;
  * Created by dev4mobile on 5/24/14.
  */
 public class AwesomeApp extends Application {
+
+  private ObjectGraph objectGraph;
+  @Inject AnalyticsManager analyticsManager;
 
   @Override public void onCreate() {
     super.onCreate();
@@ -21,7 +30,16 @@ public class AwesomeApp extends Application {
     //FragmentManager.enableDebugLogging(true);
 
     //NewRelic.withApplicationToken("AAa52803e06a8d68f2a294649452d184f28e91d702").start(this.getApplication());
+
+    objectGraph = ObjectGraph.create(getModules().toArray());
+    objectGraph.inject(this);
+    analyticsManager.registerAppEnter();
   }
+
+  private List<Object> getModules() {
+    return Arrays.<Object> asList(new AppModule(this));
+  }
+
 
   /** A tree which logs important information for crash reporting. */
   private static class CrashReportingTree extends Timber.HollowTree {

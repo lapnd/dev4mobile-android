@@ -153,7 +153,7 @@ public class StreamActivity extends Activity {
 			StreamItem item = getItem(position);
 
 			StreamDrawable d = new StreamDrawable(item.mBitmap, mCornerRadius, mMargin);
-			view.setBackground(d);
+			//view.setBackground(d);
 
 			((TextView) view.findViewById(R.id.textView1)).setText(item.mLine1);
 			((TextView) view.findViewById(R.id.textView2)).setText(item.mLine2);
