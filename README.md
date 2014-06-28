@@ -18,7 +18,7 @@ dependencies {
     
 }
 ```
-![](dev4mobile-android/app/src/main/res/drawable-hdpi/ic_launcher.png)
+![](app/src/main/res/drawable-hdpi/ic_launcher.png)
 Licence 
 ====
     AA 2013 Jake Wharton
